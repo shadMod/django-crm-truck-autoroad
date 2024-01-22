@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+
+	<title>
+		{% block title %}
+		{% endblock %}
+	</title>
+
+	{% include './sections/head.html' %}
+	{% include './sections/stylesheet.html' %}
+
+</head>
+<body>
+
+<!-- start navbar -->
+{% block navbar %}
+{% include './sections/navbar.html' %}
+{% endblock navbar %}
+<!-- end navbar -->
+
+<!-- start header -->
+{% block header %}
+{% include './sections/header.html' %}
+{% endblock header %}
+<!-- end header -->
+
+{% block content %}
+{% endblock content %}
+
+<!-- start footer -->
+{% block footer %}
+{% include './sections/footer.html' %}
+{% endblock footer %}
+<!-- end footer -->
+
+<!-- start loader -->
+{% block loader %}
+{% include './sections/loader.html' %}
+{% endblock loader %}
+<!-- end loader -->
+
+{% include './sections/scripts.html' %}
+
+</body>
+</html>
