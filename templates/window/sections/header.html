@@ -39,11 +39,8 @@
 						{% trans 'Choose your vehicle' %}
 					</h2>
 					{% for field in form %}
-					{{ field.label_classes }}
 					<p>
-						<label for="{{ field.auto_id }}" class="label">
-							{{ field.label }}
-						</label>
+						{{ field.label }}
 						{{ field }}
 					</p>
 					{% endfor %}
